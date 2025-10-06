@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirtschaftsingenieurwesen Maschinenbau</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background: #00539C;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-in-out;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .info {
+            background: #e0e7ef;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        footer {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wirtschaftsingenieurwesen Maschinenbau</h1>
+        <p>Die Schnittstelle zwischen Technik und Wirtschaft</p>
+    </header>
+    <nav>
+        <a href="#studium">Studium</a>
+        <a href="#beruf">Berufsperspektiven</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <main>
+        <section id="studium">
+            <h2>Was ist Wirtschaftsingenieurwesen Maschinenbau?</h2>
+            <div class="info">
+                <p>Wirtschaftsingenieurwesen Maschinenbau verbindet technisches Know-how mit betriebswirtschaftlichen Kenntnissen. Im Studium lernst du, wie Maschinen und Anlagen konstruiert, optimiert und wirtschaftlich eingesetzt werden.</p>
+            </div>
+            <h3>Studieninhalte</h3>
+            <ul>
+                <li>Mathematik & Physik</li>
+                <li>Maschinenbau-Grundlagen</li>
+                <li>Betriebswirtschaftslehre</li>
+                <li>Projektmanagement</li>
+                <li>Fertigungstechnik</li>
+                <li>Technisches Englisch</li>
+            </ul>
+        </section>
+        <section id="beruf">
+            <h2>Berufsperspektiven</h2>
+            <div class="info">
+                <p>Absolventen arbeiten u.a. in der Produktion, Entwicklung, im Vertrieb oder im technischen Einkauf. Die Kombination aus Technik und Wirtschaft eröffnet zahlreiche Karrieremöglichkeiten in Industrie und Beratung.</p>
+            </div>
+            <h3>Konkrete Berufe</h3>
+            <ul>
+                <li>Produktionsingenieur</li>
+                <li>Projektmanager im Maschinenbau</li>
+                <li>Technischer Einkäufer</li>
+                <li>Vertriebsingenieur</li>
+                <li>Qualitätsmanager</li>
+                <li>Berater für technische Prozesse</li>
+            </ul>
+            <h3>Mögliche Arbeitgeber</h3>
+            <ul>
+                <li>Maschinen- und Anlagenbauunternehmen</li>
+                <li>Automobilindustrie</li>
+                <li>Unternehmensberatungen</li>
+                <li>Forschungsinstitute</li>
+            </ul>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Name:</label><br/>
+                <input type="text" id="name" name="name" required /><br/><br/>
+                <label for="email">E-Mail:</label><br/>
+                <input type="email" id="email" name="email" required /><br/><br/>
+                <label for="nachricht">Nachricht:</label><br/>
+                <textarea id="nachricht" name="nachricht" rows="5" required></textarea><br/><br/>
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Wirtschaftsingenieurwesen Maschinenbau | Erstellt mit ♥ für Technik & Wirtschaft
+    </footer>
+</body>
+</html>
